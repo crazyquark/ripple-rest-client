@@ -352,7 +352,8 @@ Client.prototype.setTrustLines = function(options, callback) {
       trustline: {
         limit: options.limit,
         currency: options.currency,
-        counterparty: options.counterparty
+        counterparty: options.counterparty,
+        account_allows_rippling: options.account_allows_rippling || false
       }
     }
   };
